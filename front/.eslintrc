@@ -1,0 +1,21 @@
+{
+  "parserOptions": {
+    "ecmaVersion": 2020,
+    "sourceType": "module", // import, export 같은 모듈 시스템을 사용하기 때문
+    "ecmaFeatures": {
+      "jsx": true // jsx 사용
+    }
+  },
+  "env": {
+    // 브라우저와 노드 환경에서 돌아가게 하고, ES6 문법 사용
+    "browser": true,
+    "node": true,
+    "es6": true
+  },
+  "extends": [
+    // 누군가가 만들어 놓은 해당 규칙을 사용하겠다. 근데 사용한 아래의 규칙들은 좀 느슨한 면이 있어서 나중에 엄격하게 고칠것이다.
+    "eslint:recommend",
+    "plugin:react/recommended"
+  ],
+  "plugins": ["import", "react-hooks"]
+}
